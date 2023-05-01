@@ -28,10 +28,10 @@ function Navbar(){
     window.addEventListener('resize', showButton);
     return (
         <>
-        <nav className="navbar">
+        <nav className="navbar" >
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    Refyne
+                <img src="/images/img-1.jpeg" alt="Refyne logo" className="logo-image" />
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <Hamburger toggled={click} toggle={setClick} />
@@ -57,13 +57,8 @@ function Navbar(){
                             Contact
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to='/sign-up' className="nav-links-mobile" onClick={closeMobileMenu}>
-                            Sign up
-                        </Link>
-                    </li>
+
                 </ul>
-                {button && <Button buttonStyle='btn--outline'> SIGN UP</Button>}
             </div>
         </nav>
         </>

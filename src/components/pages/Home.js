@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
+import ContactForm from '../ContactForm';
 
 function Home () {
     return (
         <>
-        <HeroSection />
+        <ContactForm />
         </>
     )
 }

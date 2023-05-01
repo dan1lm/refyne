@@ -1,0 +1,146 @@
+.what-is-refyne-text{
+    background-color: #2F4F4F;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: aliceblue;
+    text-align: center;
+}
+  
+  body {
+    background-color: #e6e6e6;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+  }
+  
+  .line {
+    position: absolute;
+    background-color: black;
+    width: 4px;
+    
+  }
+  
+  .line-top-left {
+    top: 20%;
+    left: 37%;
+    height: 100px;
+    transform: rotate(-45deg);
+  }
+  
+  .line-top-right {
+    top: 20%;
+    right: 37%;
+    height: 100px;
+    transform: rotate(45deg);
+  }
+  
+  .line-bottom-left {
+    bottom: 20%;
+    left: 37%;
+    height: 100px;
+    transform: rotate(45deg);
+  }
+  
+  .line-bottom-right {
+    bottom: 20%;
+    right: 37%;
+    height: 100px;
+    transform: rotate(-45deg);
+  }
+  
+  .text {
+    position: absolute;
+    font-size: 21px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+  }
+  
+  .text-top-left {
+    top: 40px;
+    left: 40px;
+  }
+  
+  .text-top-right {
+    top: 40px;
+    right: 40px;
+  }
+  
+  .text-bottom-left {
+    bottom: 40px;
+    left: 40px;
+  }
+  
+  .text-bottom-right {
+    bottom: 40px;
+    right: 40px;
+  }
+
+
+  @media (max-width: 960px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .image {
+      width: 60%;
+      height: 60%;
+    }
+  
+    .line-top-left, .line-top-right, .line-bottom-left, .line-bottom-right {
+      display: none;
+    }
+  
+    .text {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .text-top-left {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .text-top-right {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .text-bottom-left {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .text-bottom-right {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .image {
+      width: 40%;
+      height: 40%;
+    }
+  }
